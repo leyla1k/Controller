@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Controller</string>
+    <string name="title_scanner">Сканер</string>
+    <string name="title_work">Смена</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quickie_scan_qr_code">quickie_scan_qr_code</string>
+    <string name="quickie_please_wait">quickie_please_wait</string>
+    <string name="qr_button">qr_button</string>
+    <string name="custom_button">custom_button</string>
+    <string name="barcode_format">barcode_format</string>
+    <string name="scan_barcode">scan_barcode</string>
+    <string name="ok_action">ok_action</string>
+    <string name="open_action">open_action</string>
+</resources>

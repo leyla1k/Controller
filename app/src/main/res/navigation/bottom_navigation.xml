@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_nfc">
+
+    <fragment
+        android:id="@+id/navigation_nfc"
+        android:name="com.example.controller.ui.nfcPac.NFCFragment"
+        android:label="@string/title_scanner"
+        tools:layout="@layout/fragment_nfc" >
+        <action
+            android:id="@+id/action_navigation_nfc_to_qrActivity"
+            app:destination="@id/qrActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_work_shift"
+        android:name="com.example.controller.ui.workShiftPac.WorkShiftFragment"
+        android:label="@string/title_work"
+        tools:layout="@layout/fragment_work_shift_started" >
+        <action
+            android:id="@+id/action_navigation_work_shift_to_workShiftStartedFragment"
+            app:destination="@id/workShiftStartedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.controller.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/workShiftStartedFragment"
+        android:name="com.example.controller.ui.workShiftPac.workShiftStarted.WorkShiftStartedFragment"
+        android:label="WorkShiftStartedFragment" >
+        <action
+            android:id="@+id/action_workShiftStartedFragment_to_navigation_work_shift"
+            app:destination="@id/navigation_work_shift" />
+    </fragment>
+    <activity
+        android:id="@+id/qrActivity"
+        android:name="com.example.controller.ui.nfcPac.qr.QRActivity"
+        android:label="activity_qractivity"
+        tools:layout="@layout/activity_qr" />
+</navigation>
